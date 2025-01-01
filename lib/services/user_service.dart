@@ -31,7 +31,6 @@ Future<ApiResponse> login(String email, String password) async {
   } catch (e) {
     apiResponse.error = serverError;
   }
-
   return apiResponse;
 }
 

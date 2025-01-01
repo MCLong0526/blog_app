@@ -14,6 +14,12 @@ class User {
         name: json['user']['name'],
         email: json['user']['email'],
         image: json['user']['image'],
-        token: json['user']['token']);
+        token: json['token']);
+  }
+
+  // Overriding the toString() method for better logging
+  @override
+  String toString() {
+    return 'User(id: $id, name: $name, email: $email, image: $image, token: $token)';
   }
 }
